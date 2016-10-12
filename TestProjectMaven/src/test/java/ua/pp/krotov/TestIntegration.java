@@ -20,7 +20,7 @@ public class TestIntegration {
 	@Test 
 	public void gotoSeleniumWikiPage() {
 		driver.get("https://en.wikipedia.org/");
-		driver.findElement(By.id("searchInput")).sendKeys("Selenium");	
+		driverjhjgjghjhgj.findElement(By.id("searchInput")).sendKeys("Selenium");	
 		driver.findElement(By.id("searchButton")).click();	
 		String header = driver.findElement(By.id("firstHeading")).getText();	
 		Assert.assertEquals(header, "Selenium");
