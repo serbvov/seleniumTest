@@ -1,0 +1,15 @@
+package javalessonpackage;
+
+public class Plane {
+
+	public String title;
+	public int capacity;
+	public int speed = 7;
+	
+	public void get(){
+		
+		
+		
+	}
+	
+}

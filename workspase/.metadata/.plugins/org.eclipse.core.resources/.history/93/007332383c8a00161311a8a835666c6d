@@ -1,0 +1,6 @@
+package ua.pp.krotov;
+
+public class WebIElm {
+	WebDriver driver = new DriverName();
+    driver.<user hits space>
+}

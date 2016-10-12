@@ -1,0 +1,14 @@
+package javalessonpackage;
+import java.util.Scanner;
+public class Solution
+{
+    public static void main(String[] args)
+    {
+
+      Scanner scanner = new Scanner(System.in);
+        String month = scanner.nextLine();
+        String  year = scanner.nextLine(); //тут менял на integer, результат тот же
+        String day = scanner.nextLine();  //тут менял на integer, результат тот же
+        System.out.println (month + " " +  day + " " + year);
+    }
+}

@@ -1,0 +1,6 @@
+package javalessonpackage;
+
+public class Reader {
+	int i = 3;
+	int k = 5;
+}

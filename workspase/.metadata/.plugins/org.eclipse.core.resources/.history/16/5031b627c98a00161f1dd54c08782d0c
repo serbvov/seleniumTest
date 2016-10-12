@@ -1,0 +1,15 @@
+package ua.pp.krotov;
+
+import org.testng.annotations.Test;
+
+public class GoogleTestPage {
+	
+	@Test
+	public void testSearch(){
+		
+		HomePage home = HomePage();
+		ResultPage result = home.search("automated testing info");
+		
+	}
+	
+}

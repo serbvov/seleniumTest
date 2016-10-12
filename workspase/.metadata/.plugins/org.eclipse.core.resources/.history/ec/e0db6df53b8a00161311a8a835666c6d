@@ -1,0 +1,84 @@
+package ua.pp.krotov;
+
+import static org.testng.AssertJUnit.assertEquals;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class WebDriverTesting {
+	
+  private WebDriver driver;
+
+  @BeforeClass
+  public void setUp() {
+    
+	  IWebDriver driver = new DriverName();
+	  driver.get("https://vk.com/");
+    
+  }
+
+  @Test
+  public void testFeedback() {
+	  
+	  
+	  
+      
+	  
+  }
+	  @AfterClass
+	  public void tearDown() {
+	    driver.quit();
+
+	  }
+
+}
+
+
+/**
+
+
+
+  @BeforeClass
+  public void setUp() {
+    driver = new FirefoxDriver();
+    driver.get("https://vk.com/");
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    
+    
+  }
+
+  @Test
+  public void testFeedback() {
+	  WebElement elementEmail1 = driver.findElement(By.id("index_email"));
+	  elementEmail1.clear();
+	  elementEmail1.sendKeys("serbvov@inbox.ru");
+	  
+	  WebElement elementEmail2 = driver.findElement(By.id("index_pass"));
+	  elementEmail2.clear();
+	  elementEmail2.sendKeys("rabotadidiaj2009q1");
+	  
+	  WebElement elementEmail3 = driver.findElement(By.id("index_login_button"));
+	  elementEmail3.findElement(By.id("index_login_button")).click();
+      
+	  assertEquals("Сначала интересные", driver.findElement(By.xpath("div.ui_toggler_label")).getText());
+	  
+	  
+      
+	  
+  }
+	  @AfterClass
+	  public void tearDown() {
+	    driver.quit();
+
+	  }
+
+}
+
+*/

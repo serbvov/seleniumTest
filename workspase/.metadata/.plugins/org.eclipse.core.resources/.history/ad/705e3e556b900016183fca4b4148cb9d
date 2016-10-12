@@ -1,0 +1,11 @@
+package javalessonpackage;
+
+public class Solution
+{
+    public static double bithdayDate(String str, int a, int b){
+        return str+s a+ b;
+    }
+    public static void main(String[] args) {
+        System.out.println(addTenPercent(10));
+    }
+}

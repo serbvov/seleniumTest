@@ -1,0 +1,17 @@
+package javalessonpackage;
+
+public class Plane {
+
+	public String title;
+	public int capacity;
+	public int speed = 7;
+	
+	
+	public int get(int a, int b, int c, int d, int e){
+		if(a > b)return a;
+		if(c + d < b)return a+b;
+		return 15;
+		
+	}
+	
+}

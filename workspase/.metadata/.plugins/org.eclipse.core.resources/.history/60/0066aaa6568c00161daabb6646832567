@@ -1,0 +1,8 @@
+package ua.pp.krotov;
+
+public class JavaTest {
+
+	Plane plane = new Plane();
+	
+	
+}

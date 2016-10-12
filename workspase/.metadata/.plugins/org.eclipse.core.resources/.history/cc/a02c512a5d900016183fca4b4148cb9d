@@ -1,0 +1,11 @@
+package javalessonpackage;
+
+public class Reader {
+	int i;
+	int k;
+	
+	public void Scan(){
+		System.out.println("ввыдите первое число: ");
+	}
+	
+}

@@ -1,0 +1,20 @@
+package javalessonpackage;
+
+public class Plane {
+
+	public String title;
+	public int capacity;
+	public int speed = 7;
+	
+	
+	public int get(int a, int b, int c, int d, int e){
+		int res =b - capacity;
+		return res;
+		
+	}
+	
+	public void get(){
+		
+	}
+	
+}

@@ -1,0 +1,15 @@
+package javalessonpackage;
+
+public class TestJava {
+
+	public static void main(String[] args) {
+		
+		int i = 3;
+		
+	}
+	
+	private static int count(int x) {
+		
+	}
+
+}

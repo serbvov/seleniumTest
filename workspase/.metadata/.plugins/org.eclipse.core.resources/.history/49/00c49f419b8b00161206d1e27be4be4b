@@ -1,0 +1,11 @@
+package ua.pp.krotov;
+
+public class ResultPage {
+
+	public String getFirstLink() {
+		
+		return "some text";
+		
+	}
+
+}

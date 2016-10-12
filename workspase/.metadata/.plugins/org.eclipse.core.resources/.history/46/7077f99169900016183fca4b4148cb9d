@@ -1,0 +1,15 @@
+package javalessonpackage;
+
+public class Solution
+{
+    //напишите тут ваш код
+
+    public static void main(String[] args) {
+        printString("Hello Amigo!");
+    }
+    
+    public static void printString(String s){
+    	this.s = s;
+    }
+    
+}

@@ -1,0 +1,17 @@
+package javalessonpackage;
+
+public class Complex {
+
+	public double real;
+	
+	public double im;
+	
+	public Complex(){
+		
+	}
+	
+	public Complex(double real, double im){
+		
+	}
+	
+}

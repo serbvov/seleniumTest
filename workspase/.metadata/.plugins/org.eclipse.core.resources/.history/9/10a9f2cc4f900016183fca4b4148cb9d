@@ -1,0 +1,37 @@
+package javalessonpackage;
+
+public class Complex {
+
+	private double real;
+	
+	private double im;
+	
+	public Complex(){
+		
+	}
+	
+	
+	public Complex(double real, double im){
+		this.real = real;
+		this.im = im;
+	}
+	
+	public double getReal(){
+		return real;
+	}
+	
+	public void setReal(double real){
+		this.real = real;
+	}
+	
+	public double getIm(){
+		return im;
+	}
+	
+	public void setIm(double im){
+		this.im = im;
+	}
+	
+	public Complex plus(){
+	}
+}

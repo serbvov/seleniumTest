@@ -1,0 +1,22 @@
+package javalessonpackage;
+
+public class Main {
+	public static void main(String[] args){
+	
+		Plane plane = new Plane();
+		plane.title = "boeng 787";
+		plane.capacity = 200;
+		plane.speed = 1000;
+		
+		Plane plane2 = new Plane();
+		plane2.title = "boeng 777";
+		plane2.capacity = 305;
+		plane2.speed = 1200;
+		
+		if(plane == plane2)System.out.println(1);
+		else System.out.println(2);
+		
+		
+		
+	}
+}

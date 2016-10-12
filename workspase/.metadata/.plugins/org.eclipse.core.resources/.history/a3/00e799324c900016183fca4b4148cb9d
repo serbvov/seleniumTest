@@ -1,0 +1,22 @@
+package javalessonpackage;
+
+public class Plane {
+
+	public String title;
+	public int capacity;
+	public int speed = 7;
+	
+	public Plane(){
+		System.out.println("test text");
+	}
+	
+	public int difference(){
+		int speed = 9;
+		return speed - capacity;
+	}
+	
+	public void f(Plane plane){
+		this.title = title;
+	}
+	
+}

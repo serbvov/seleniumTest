@@ -1,0 +1,11 @@
+package javalessonpackage;
+
+public class Solution {
+
+	public static void main(String[] args) {
+		Cat cat = new Cat("Vaska");
+		System.out.println("Cat is " + cat); 
+
+	}
+
+}

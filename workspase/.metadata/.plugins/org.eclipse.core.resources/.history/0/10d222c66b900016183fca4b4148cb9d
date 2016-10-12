@@ -1,0 +1,7 @@
+package javalessonpackage;
+import java.util.Scanner;
+
+0
+	
+
+public class Solution { public static void main(String[] args) { System.out.print("August "); System.out.print("15 "); System.out.print("1998 "); } }

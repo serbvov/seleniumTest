@@ -1,0 +1,16 @@
+package javalessonpackage;
+
+public class Plane {
+
+	public String title;
+	public int capacity;
+	public int speed = 7;
+	
+	
+	public void get(int a){
+		int res = a * a;
+		System.out.println("It im method get: " + a);
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+package javalessonpackage;
+
+public class Complesx {
+
+	public double real;
+	
+	public double im;
+	
+	public Complex(){
+		
+	}
+	
+}

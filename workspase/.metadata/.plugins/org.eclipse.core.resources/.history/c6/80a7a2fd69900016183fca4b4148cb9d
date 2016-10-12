@@ -1,0 +1,14 @@
+package javalessonpackage;
+
+public class Solution
+{
+    public static void main(String[] args) {
+    	 System.out.println(converEurToUsd(3,12)); 
+    	 System.out.println(converEurToUsd(3,12));
+    }
+
+    public static double convertEurToUsd(int eur, double course){
+    	double a = (eur * course);
+    	return a;
+    }
+}

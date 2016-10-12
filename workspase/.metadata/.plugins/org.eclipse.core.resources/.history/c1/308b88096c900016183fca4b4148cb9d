@@ -1,0 +1,13 @@
+package javalessonpackage;
+import java.util.Scanner;
+public class Solution {  
+     public static void main(String[] args) {
+         String name = "yName";
+         for (int i = 0; i < 5; i++){  // тут мы задаем счетчик для строк 
+         System.out.println();         // оно будет выполняться если         
+                                       //выполнится вложенный цикл
+             for (int j=0; j<10; j++)  
+         System.out.print(name+" ");
+         }
+     } 
+ }

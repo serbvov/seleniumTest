@@ -1,0 +1,12 @@
+package javalessonpackage;
+
+public class Main {
+	public static void main(String[] args){
+	
+		Plane plane = new Plane();
+		plane.title = "boeng 787";
+		
+		System.out.println();
+		
+	}
+}

@@ -1,0 +1,101 @@
+package ua.pp.krotov;
+
+import static org.testng.AssertJUnit.assertEquals;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class WebDriverTesting {
+	
+  private WebDriver driver;
+
+  @BeforeClass
+  public void setUp() {
+    driver = new FirefoxDriver();
+    driver.get("https://vk.com/");
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    
+  }
+
+  @Test
+  public void testFeedback() {
+	  WebElement elementEmail1 = driver.findElement(By.id("index_email"));
+	  elementEmail1.clear();
+	  elementEmail1.sendKeys("serbvov@inbox.ru");
+	  
+	  WebElement elementEmail2 = driver.findElement(By.id("index_pass"));
+	  elementEmail2.clear();
+	  elementEmail2.sendKeys("rabotadidiaj2009q1");
+	  
+	  WebElement elementEmail3 = driver.findElement(By.id("index_login_button"));
+	  elementEmail3.findElement(By.id("index_login_button")).click();
+      
+	  assertEquals("Сначала интересные", driver.findElement(By.xpath("div.ui_toggler_label")).getText());
+	  
+	  String className = selenium.getAttribute(".//*[@id='nav-menu']/ul/li[1]/@class");
+	  assertEquals("home-bttn active-bttn", className);
+      
+	  
+  }
+	  @AfterClass
+	  public void tearDown() {
+	    driver.quit();
+
+	  }
+
+}
+/**
+  
+    driver.findElement(By.id("feedback_body")).clear();
+    driver.findElement(By.id("feedback_body")).sendKeys("test");
+    driver.findElement(By.id("captcha")).clear();
+    driver.findElement(By.id("captcha")).sendKeys("7638");
+    driver.findElement(By.name("commit")).click();
+   
+      assertEquals("Необходимо заполнить", driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/div[3]/div[2]/span/span")).getText());
+      assertEquals("rgba(231, 76, 60, 1)", driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/div[3]/div[2]/span/span")).getCssValue("color"));
+      assertEquals("rgba(241, 90, 92, 1)", driver.findElement(By.xpath("//*[@id='feedback_email']")).getCssValue("background-color"));
+  
+    driver.findElement(By.id("feedback_email")).clear();
+    driver.findElement(By.id("feedback_email")).sendKeys("test@test.com");
+    driver.findElement(By.id("feedback_body")).clear();
+    driver.findElement(By.id("feedback_body")).sendKeys("");
+    driver.findElement(By.id("captcha")).clear();
+    driver.findElement(By.id("captcha")).sendKeys("9823");
+    driver.findElement(By.name("commit")).click();
+    
+      assertEquals("Необходимо заполнить", driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/div[4]/div[2]/span/span")).getText());
+      assertEquals("rgba(231, 76, 60, 1)", driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/div[4]/div[2]/span/span")).getCssValue("color"));
+      assertEquals("rgba(241, 90, 92, 1)", driver.findElement(By.xpath("//*[@id='feedback_body']")).getCssValue("background-color"));
+ 
+    driver.findElement(By.id("feedback_body")).clear();
+    driver.findElement(By.id("feedback_body")).sendKeys("test");
+    driver.findElement(By.name("commit")).click();
+   
+      assertEquals("Неверно введены символы с картинки", driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/div[5]/div[2]/div/span/span")).getText());
+      assertEquals("rgba(231, 76, 60, 1)", driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div[2]/form/div[5]/div[2]/div/span/span")).getCssValue("color"));
+      assertEquals("rgba(241, 90, 92, 1)", driver.findElement(By.xpath("//*[@id='captcha']")).getCssValue("background-color"));
+   
+    driver.findElement(By.id("captcha")).clear();
+    driver.findElement(By.id("captcha")).sendKeys("5775");
+    driver.findElement(By.name("commit")).click();
+    
+    //т.к. после успешной отправки письма появляется попап который сложно отловить, решил проверить background инпутов
+   
+        assertEquals("rgba(225, 230, 235, 1)", driver.findElement(By.xpath("//*[@id='feedback_email']")).getCssValue("background-color"));
+        assertEquals("rgba(225, 230, 235, 1)", driver.findElement(By.xpath("//*[@id='feedback_body']")).getCssValue("background-color"));
+        
+
+      
+      */
+  
+
+  
+

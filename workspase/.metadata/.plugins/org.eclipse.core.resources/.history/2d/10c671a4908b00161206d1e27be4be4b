@@ -1,0 +1,10 @@
+package ua.pp.krotov;
+
+public class ResultPage {
+
+	public Object getFirstLink() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

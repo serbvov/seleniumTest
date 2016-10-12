@@ -1,0 +1,13 @@
+package javalessonpackage;
+
+public class Main {
+	public static void main(String[] args){
+	
+		Complex complex = new Complex();
+		complex.setReal(34.98);
+		complex.setIm(12.67);
+		
+		
+		
+	}
+}
